@@ -1,0 +1,4 @@
+Staff,1.1
+Manager,2.5
+Founder,3.3
+Boss,2.9

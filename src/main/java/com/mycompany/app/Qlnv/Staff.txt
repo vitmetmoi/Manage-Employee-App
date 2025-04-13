@@ -1,0 +1,12 @@
+User,Staff1,23016114,Staff,Company,1.1
+User,Staff2,23013303,Staff,Company,1.1
+User,Staff3,23013890,Staff,Company,1.1
+User2,Staff1,23016087,Staff,Company,1.1
+User2,Staff2,23017081,Staff,Company,1.1
+User2,Staff3,23019313,Staff,Company,1.1
+qwe,Founder,23014765,Founder,Ha Noi ,3.3
+qwe,Staff 3,23016695,Staff,Company,1.1
+qwe,Bao Duy,23019060,Boss,Viet Nam,2.9
+qwe,Staff 1,23018603,Staff,Company,1.1
+qwe,Staff 2 ,23012915,Staff,Company,1.1
+qwe,Duy ,2301733,Manager,Company,2.5

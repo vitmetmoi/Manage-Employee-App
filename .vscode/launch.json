@@ -1,0 +1,106 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "com.mycompany.app.Qlnv.App",
+            "projectName": "my-app"
+        },
+        {
+            "type": "java",
+            "name": "Cycle",
+            "request": "launch",
+            "mainClass": "com.mycompany.app.Week3.Code2.Task1.Excersice17.Cycle",
+            "projectName": "my-app"
+        },
+        {
+            "type": "java",
+            "name": "Excersice4",
+            "request": "launch",
+            "mainClass": "com.mycompany.app.Week2.Code2.Excersice4.Excersice4",
+            "projectName": "my-app"
+        },
+        {
+            "type": "java",
+            "name": "Excersice6",
+            "request": "launch",
+            "mainClass": "com.mycompany.app.Week2.Excersice6.Excersice6",
+            "projectName": "my-app"
+        },
+        {
+            "type": "java",
+            "name": "Excersice5",
+            "request": "launch",
+            "mainClass": "com.mycompany.app.Week2.Excersice5.Excersice5",
+            "projectName": "my-app"
+        },
+        {
+            "type": "java",
+            "name": "Excersice3",
+            "request": "launch",
+            "mainClass": "com.mycompany.app.Week2.Excersice3.Excersice3",
+            "projectName": "my-app"
+        },
+        {
+            "type": "java",
+            "name": "Excersice2",
+            "request": "launch",
+            "mainClass": "com.mycompany.app.Week2.Excersice2.Excersice2",
+            "projectName": "my-app"
+        },
+        {
+            "type": "java",
+            "name": "Excersice1",
+            "request": "launch",
+            "mainClass": "com.mycompany.app.Week2.Excersice1",
+            "projectName": "my-app"
+        },
+        {
+            "type": "java",
+            "name": "Mainclass",
+            "request": "launch",
+            "mainClass": "com.mycompany.app.Mainclass",
+            "projectName": "my-app"
+        },
+        {
+            "type": "java",
+            "name": "Whileloop",
+            "request": "launch",
+            "mainClass": "com.mycompany.app.Week1.Code2.Whileloop",
+            "projectName": "my-app"
+        },
+        {
+            "type": "java",
+            "name": "Forloop",
+            "request": "launch",
+            "mainClass": "com.mycompany.app.Week1.Code2.Forloop",
+            "projectName": "my-app"
+        },
+        {
+            "type": "java",
+            "name": "Breakandcontinue",
+            "request": "launch",
+            "mainClass": "com.mycompany.app.Week1.Code2.Breakandcontinue",
+            "projectName": "my-app"
+        },
+        {
+            "type": "java",
+            "name": "breakcontinue",
+            "request": "launch",
+            "mainClass": "com.mycompany.app.Week1.Code2.breakcontinue",
+            "projectName": "my-app"
+        },
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "com.mycompany.app.App",
+            "args": "",
+            "projectName": "my-app"
+        }
+    ]
+}
