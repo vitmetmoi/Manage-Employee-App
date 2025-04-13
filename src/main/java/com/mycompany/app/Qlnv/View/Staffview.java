@@ -1,26 +1,36 @@
 package com.mycompany.app.Qlnv.View;
 
-import com.mycompany.app.Qlnv.Mycompany.*;
-
-import java.awt.*;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Font;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Image;
+import java.awt.Rectangle;
+import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import javax.swing.*;
-import javax.swing.table.DefaultTableModel;
-import java.awt.Graphics;
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
-import java.awt.Image;
-
-import javax.swing.GroupLayout;
+import javax.swing.DefaultComboBoxModel;
 import javax.swing.ImageIcon;
-import javax.swing.JComponent;
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+import javax.swing.SpringLayout;
+import javax.swing.WindowConstants;
+import javax.swing.table.DefaultTableModel;
 
-import javax.imageio.ImageIO;
-
-import java.util.*;
+import com.mycompany.app.Qlnv.Mycompany.Rank;
+import com.mycompany.app.Qlnv.Mycompany.RankXML;
+import com.mycompany.app.Qlnv.Mycompany.Staff;
+import com.mycompany.app.Qlnv.Mycompany.StaffXML;
 
 public class Staffview extends JFrame implements ActionListener {
 
@@ -128,13 +138,6 @@ public class Staffview extends JFrame implements ActionListener {
                     image = t .getImage("social-care.gif");
                     g2d.drawImage(image,80,370,200,200, this);
 
-
-                   /*  Image loginImage = t.getImage("meteor-rain.gif");  
-                    g2d.drawImage(loginImage,85,380,70,70,this);
-                    g2d.drawImage(loginImage,210,470,80,80,this);
-                    g2d.drawImage(loginImage,250,400,45,45,this);
-                    g2d.drawImage(loginImage,50,500,45,45,this);
-                    g2d.drawImage(loginImage,140,480,25,25,this);*/
 
                 }
             };
@@ -295,26 +298,6 @@ public class Staffview extends JFrame implements ActionListener {
 
         }
 
-      /*  public void addStaff(){
-        if(nameField.isEnabled() == false){
-
-        
-            adressField.setEnabled(true);
-            nameField.setEnabled(true);
-            idField.setEnabled(false);
-            rankField.setEnabled(true);
-            changeButton.setEnabled(false);
-            deleteButton.setEnabled(false);
-        }
-        else{
-            staff = new Staff(getName(), WIDTH, getName(), ABORT);
-                staff.set_name(nameField.getText());
-                staff.set_adress(adressField.getText());
-                staff.set_rank(rankField.getText());
-            showStaff(staffXML);
-        }
-        }
-        */
 
         public void nameField_setEnabled(boolean bol){
             nameField.setEnabled(bol);
@@ -448,19 +431,6 @@ public class Staffview extends JFrame implements ActionListener {
 
        public void rankBox_reset(RankXML rankXML_){
         
-     /*    for(int i = 0 ; i<rankField.getItemCount(); i++){
-   
-            boolean bol = false;
-            for(int j = 0 ; j < rankXML_.get_size() ; j ++){
-                rank = rankXML_.get_Rank(j);
-            if(rankField.getItemAt(i).equals(rank.get_rank())){
-                bol = true;
-            }
-            }
-            if(bol == false){
-                rankField.removeItemAt(i);
-            }
-        }*/
 
         rankField.removeAllItems();
 

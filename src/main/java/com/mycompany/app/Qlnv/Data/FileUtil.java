@@ -1,7 +1,20 @@
 package com.mycompany.app.Qlnv.Data;
-import com.mycompany.app.Qlnv.Mycompany.*;
-import java.util.*;
-import java.io.*;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.LinkedHashSet;
+import java.util.Scanner;
+import java.util.Set;
+
+import com.mycompany.app.Qlnv.Mycompany.Rank;
+import com.mycompany.app.Qlnv.Mycompany.RankXML;
+import com.mycompany.app.Qlnv.Mycompany.Staff;
+import com.mycompany.app.Qlnv.Mycompany.StaffXML;
+import com.mycompany.app.Qlnv.Mycompany.User;
+import com.mycompany.app.Qlnv.Mycompany.UserXML;
 
 
 public class FileUtil {
@@ -105,27 +118,6 @@ Set<String> set;
    File myFile = new File("Staff.txt");
    return myFile.length();
     }
-    /*public void File_Rank_Read(RankXML rankXML){
-      try {
-        File myObj = new File("Rank.txt");
-        Scanner myReader = new Scanner(myObj);
-        Rank rank = new Rank();
-        int i = 0;
-        while (myReader.hasNextLine()) {
-          rank = new Rank();
-            String data = myReader.nextLine();
-            String[] words = data.split(" ");
-            rank.set_rank(words[0]);
-            rank.set_salary(Double.parseDouble(words[1]));
-            rankXML.set_rankxml(rank);
-            i++;
-        }
-        myReader.close();
-      } catch (FileNotFoundException e) {
-        System.out.println("An error occurred.");
-        e.printStackTrace();
-      }
-    }*/
   
 
   public void File_Staff_Read_all(StaffXML staffXML,User user){

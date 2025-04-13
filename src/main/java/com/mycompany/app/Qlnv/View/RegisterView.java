@@ -1,12 +1,21 @@
 package com.mycompany.app.Qlnv.View;
-import java.awt.*;
-import javax.swing.*;
-import java.util.*;
-import java.io.*;
-
-
-import java.awt.event.ActionListener;
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Image;
+import java.awt.Rectangle;
+import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
+import javax.swing.SpringLayout;
 
 
 public class RegisterView extends JFrame implements ActionListener {
@@ -50,24 +59,15 @@ public class RegisterView extends JFrame implements ActionListener {
                 g2d.fill(rec);
 
                   Toolkit t=Toolkit.getDefaultToolkit();  
-                  Image  loginImage = t.getImage("meteor-rain.gif");  
+                  Image  loginImage = t.getImage("../icons/meteor-rain.gif");  
                     g2d.drawImage(loginImage,150,0,50,50,this);
                     g2d.drawImage(loginImage,240,150,50,50,this);
                     g2d.drawImage(loginImage,10,10,35,35,this);
                     g2d.drawImage(loginImage,20,125,50,50,this);
                     g2d.drawImage(loginImage,280,50,60,60,this);
                     g2d.drawImage(loginImage,150,100,50,50,this);
-
-
             }
         };
-
-       /*  panel.add(registerButton);
-        panel.add(cancelButton);
-        panel.add(passwordField);
-        panel.add(registerField);
-        
-        */
 
         panel.add(usernameLabel);
         panel.add(usernameField);
